@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		C314EB8C2159E84800943732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C314EB8B2159E84800943732 /* AppDelegate.swift */; };
-		C314EB8E2159E84800943732 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C314EB8D2159E84800943732 /* ViewController.swift */; };
+		C314EB8E2159E84800943732 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C314EB8D2159E84800943732 /* CameraViewController.swift */; };
 		C314EB912159E84800943732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C314EB8F2159E84800943732 /* Main.storyboard */; };
 		C314EB932159E85100943732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C314EB922159E85100943732 /* Assets.xcassets */; };
 		C314EB962159E85100943732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C314EB942159E85100943732 /* LaunchScreen.storyboard */; };
+		C314EBA72159F28600943732 /* exView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C314EBA32159F28500943732 /* exView.swift */; };
+		C314EBA82159F28600943732 /* exImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C314EBA42159F28600943732 /* exImage.swift */; };
+		C314EBA92159F28600943732 /* exUITableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C314EBA52159F28600943732 /* exUITableHeaderView.swift */; };
+		C314EBAA2159F28600943732 /* exString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C314EBA62159F28600943732 /* exString.swift */; };
+		C33715A3215A02E200DAFF32 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C33715A2215A02E200DAFF32 /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C314EB882159E84800943732 /* Vision Detection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vision Detection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C314EB8B2159E84800943732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C314EB8D2159E84800943732 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C314EB8D2159E84800943732 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		C314EB902159E84800943732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C314EB922159E85100943732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C314EB952159E85100943732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C314EB972159E85100943732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C314EBA32159F28500943732 /* exView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exView.swift; sourceTree = "<group>"; };
+		C314EBA42159F28600943732 /* exImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exImage.swift; sourceTree = "<group>"; };
+		C314EBA52159F28600943732 /* exUITableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exUITableHeaderView.swift; sourceTree = "<group>"; };
+		C314EBA62159F28600943732 /* exString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exString.swift; sourceTree = "<group>"; };
+		C33715A2215A02E200DAFF32 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,51 @@
 		C314EB8A2159E84800943732 /* Vision Detection */ = {
 			isa = PBXGroup;
 			children = (
+				C314EBA22159F25300943732 /* Extension */,
+				C314EB9F2159E8CA00943732 /* Model */,
+				C314EB9E2159E8C500943732 /* Controller */,
+				C314EB9D2159E8C000943732 /* View */,
 				C314EB8B2159E84800943732 /* AppDelegate.swift */,
-				C314EB8D2159E84800943732 /* ViewController.swift */,
-				C314EB8F2159E84800943732 /* Main.storyboard */,
 				C314EB922159E85100943732 /* Assets.xcassets */,
-				C314EB942159E85100943732 /* LaunchScreen.storyboard */,
 				C314EB972159E85100943732 /* Info.plist */,
 			);
 			path = "Vision Detection";
+			sourceTree = "<group>";
+		};
+		C314EB9D2159E8C000943732 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C314EB8F2159E84800943732 /* Main.storyboard */,
+				C314EB942159E85100943732 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C314EB9E2159E8C500943732 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C314EB8D2159E84800943732 /* CameraViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C314EB9F2159E8CA00943732 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C33715A2215A02E200DAFF32 /* SqueezeNet.mlmodel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C314EBA22159F25300943732 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C314EBA42159F28600943732 /* exImage.swift */,
+				C314EBA62159F28600943732 /* exString.swift */,
+				C314EBA52159F28600943732 /* exUITableHeaderView.swift */,
+				C314EBA32159F28500943732 /* exView.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C314EB8E2159E84800943732 /* ViewController.swift in Sources */,
+				C314EBA82159F28600943732 /* exImage.swift in Sources */,
+				C314EBA72159F28600943732 /* exView.swift in Sources */,
+				C314EB8E2159E84800943732 /* CameraViewController.swift in Sources */,
+				C33715A3215A02E200DAFF32 /* SqueezeNet.mlmodel in Sources */,
+				C314EBAA2159F28600943732 /* exString.swift in Sources */,
+				C314EBA92159F28600943732 /* exUITableHeaderView.swift in Sources */,
 				C314EB8C2159E84800943732 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +319,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -280,14 +332,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4MJKWK33YR;
 				INFOPLIST_FILE = "Vision Detection/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vn.entergroup.Vision-Detection";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6a30d3c3-f64b-4e72-8a44-d1dee1a06894";
+				PROVISIONING_PROFILE_SPECIFIER = "enter group vn";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,14 +353,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4MJKWK33YR;
 				INFOPLIST_FILE = "Vision Detection/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vn.entergroup.Vision-Detection";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6a30d3c3-f64b-4e72-8a44-d1dee1a06894";
+				PROVISIONING_PROFILE_SPECIFIER = "enter group vn";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
